@@ -54,8 +54,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(15, 23, 42, 0.92);
-  backdrop-filter: blur(10px);
+  /* Solid background — no backdrop-filter: it creates a containing block for
+     descendants in WebKit/Safari, which breaks position:fixed mobile drawers. */
+  background: rgba(15, 23, 42, 0.98);
   border-bottom: 1px solid var(--border);
 }
 
@@ -1134,20 +1135,32 @@ footer:not(.site-footer) {
     overflow: hidden;
   }
 
+  .site-header {
+    overflow: visible;
+  }
+
+  .header-inner {
+    overflow: visible;
+  }
+
   .primary-nav {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     width: min(300px, 88vw);
+    height: 100vh;
+    height: 100dvh;
+    max-height: none;
     background: var(--surface);
     border-right: 1px solid var(--border);
-    padding: calc(var(--header-h) + 0.5rem) 0 1.5rem;
+    padding: calc(var(--header-h) + 0.75rem) 0 1.5rem;
+    box-sizing: border-box;
     transform: translateX(-100%);
     transition: transform 0.25s ease;
     z-index: 270;
     box-shadow: 8px 0 32px rgba(0, 0, 0, 0.35);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   body.nav-open .primary-nav {
