@@ -3,61 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technical Skills | Ravi Sarode</title>
+  <title>Skills | Ravi Sarode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <a href="index.html">Ravi <span>Sarode</span></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Ravi <span>Sarode</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="technical-skills.html" class="active">Skills</a></li>
+          <li><a href="work-experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certs</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="https://document.ravisarode.com" class="nav-docs" target="_blank" rel="noopener">Docs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work-experience.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="technical-skills.html" class="active">Technical Skills</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
-    </nav>
-  </aside>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <div class="container">
-      <header class="page-header">
-        <h1 class="hero-name">Ravi <span>Sarode</span></h1>
-        <p class="hero-tagline">Security Researcher · Web3 & Cyber Security Enthusiast</p>
-        <div class="contact-bar">
-          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
-          <span class="sep">·</span>
-          <span>Bangalore, Karnataka</span>
-          <span class="sep">·</span>
-          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      <header class="page-header page-header-slim">
+        <h1 class="page-heading">Technical skills</h1>
+        <p class="page-lead">Grouped by domain. Levels reflect day-to-day use, depth, and recency—not buzzwords.</p>
       </header>
 
-      <h2 class="page-title">Technical Skills</h2>
-      <div class="skills-grid">
-        <span class="skill-tag">Threat Hunting</span>
-        <span class="skill-tag">Web App Pentesting</span>
-        <span class="skill-tag">Networking</span>
-        <span class="skill-tag">Blockchain</span>
-        <span class="skill-tag">Solidity</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">Web Development</span>
-      </div>
+      <div class="skills-categories">
+        <section class="skill-category">
+          <h3>🛡️ Security</h3>
+          <div class="skill-rows">
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">EDR / endpoint detection</div>
+                <div class="skill-row-meta">Defender for Endpoint, telemetry, tuning</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 92%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">Threat detection &amp; hunting</div>
+                <div class="skill-row-meta">MITRE ATT&amp;CK, emulation, FP/TP analysis</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 88%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">Web app penetration testing</div>
+                <div class="skill-row-meta">OWASP-style assessments</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 75%"></div></div>
+            </div>
+          </div>
+        </section>
 
-      <footer>
-        <p>Ravi Sarode · Bangalore · s.ravi.sarode@gmail.com</p>
-      </footer>
+        <section class="skill-category">
+          <h3>☁️ Cloud &amp; platform</h3>
+          <div class="skill-rows">
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">AWS &amp; Kubernetes / EKS</div>
+                <div class="skill-row-meta">Architecture awareness, securing workloads—growing depth</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 55%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">Networking</div>
+                <div class="skill-row-meta">TCP/IP, segmentation, troubleshooting</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 70%"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skill-category">
+          <h3>💻 Programming &amp; web</h3>
+          <div class="skill-rows">
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">Python</div>
+                <div class="skill-row-meta">Automation, scripting, analysis</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 72%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">JavaScript · HTML · CSS</div>
+                <div class="skill-row-meta">Web development, tooling</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 65%"></div></div>
+            </div>
+            <div class="skill-row">
+              <div>
+                <div class="skill-row-name">Blockchain · Solidity</div>
+                <div class="skill-row-meta">Web3 interest &amp; coursework</div>
+              </div>
+              <div class="skill-bar" aria-hidden="true"><div class="skill-bar-fill" style="width: 45%"></div></div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-quick" aria-label="Footer">
+        <a href="project.html">Projects</a>
+        <a href="work-experience.html">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p>© Ravi Sarode</p>
+    </div>
+  </footer>
+  <script src="nav.js?v=4"></script>
 </body>
 </html>

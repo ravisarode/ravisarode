@@ -3,63 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project | Ravi Sarode</title>
+  <title>Projects | Ravi Sarode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <a href="index.html">Ravi <span>Sarode</span></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Ravi <span>Sarode</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html" class="active">Projects</a></li>
+          <li><a href="technical-skills.html">Skills</a></li>
+          <li><a href="work-experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certs</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="https://document.ravisarode.com" class="nav-docs" target="_blank" rel="noopener">Docs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work-experience.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="technical-skills.html">Technical Skills</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="project.html" class="active">Project</a></li>
-      </ul>
-    </nav>
-  </aside>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <div class="container">
-      <header class="page-header">
-        <h1 class="hero-name">Ravi <span>Sarode</span></h1>
-        <p class="hero-tagline">Security Researcher · Web3 & Cyber Security Enthusiast</p>
-        <div class="contact-bar">
-          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
-          <span class="sep">·</span>
-          <span>Bangalore, Karnataka</span>
-          <span class="sep">·</span>
-          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      <header class="page-header page-header-slim">
+        <h1 class="page-heading">Projects</h1>
+        <p class="page-lead">Deep dives into detection engineering and EDR—problem, stack, and impact.</p>
       </header>
 
-      <h2 class="page-title">Project</h2>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Microsoft Defender for Endpoint</span>
-          <span class="card-meta">MindTree · Security Research</span>
-        </div>
-        <p class="card-sub">EDR · Threat Detection · MITRE ATT&CK</p>
-        <ul>
-          <li>Security research and detection engineering for Microsoft Defender for Endpoint</li>
-          <li>Analysis and mitigation of false positives; machine events data analysis for True/False Positive classification</li>
-          <li>Emulation of APT behaviors and attacks to validate EDR detections aligned with MITRE ATT&CK</li>
-          <li>Authoring suppression rules for false positive detectors and handling customer detection issues with timely feedback and analysis reports</li>
-        </ul>
-      </div>
+      <article class="project-card-large">
+        <div class="project-body">
+          <p class="project-label">Featured</p>
+          <h2>EDR agent monitor &amp; detection engineering</h2>
+          <p class="page-lead" style="margin: 0 0 1rem;">End-to-end work on Microsoft Defender for Endpoint: telemetry, rules, and validation—not a toy demo.</p>
 
-      <footer>
-        <p>Ravi Sarode · Bangalore · s.ravi.sarode@gmail.com</p>
-      </footer>
+          <div class="project-section">
+            <h3>What it is</h3>
+            <p>Security research and detection engineering for a major commercial EDR: understanding agent behavior, refining detections, and keeping customers protected without drowning them in noise.</p>
+          </div>
+
+          <div class="project-section">
+            <h3>Tech &amp; tools</h3>
+            <div class="project-tech">
+              <span>Microsoft Defender for Endpoint</span>
+              <span>EDR telemetry</span>
+              <span>MITRE ATT&amp;CK</span>
+              <span>Python</span>
+              <span>Threat emulation</span>
+              <span>SIEM-style analysis</span>
+            </div>
+          </div>
+
+          <div class="project-section">
+            <h3>Problem solved</h3>
+            <ul>
+              <li>Noisy or incorrect detections erode trust and slow response—needed rigorous FP/TP analysis and targeted tuning.</li>
+              <li>Customers needed clear, evidence-backed answers when something fired in their environment.</li>
+              <li>Coverage had to be stress-tested against realistic adversary tradecraft, not only happy-path tests.</li>
+            </ul>
+          </div>
+
+          <div class="project-section">
+            <h3>Impact</h3>
+            <ul>
+              <li>Improved detection quality through structured analysis of machine events and customer escalations.</li>
+              <li>Reduced analyst toil by tightening suppressions and clarifying which alerts matter.</li>
+              <li>Aligned detection narratives to ATT&amp;CK so security teams can prioritize and communicate risk.</li>
+            </ul>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/ravisarode" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://document.ravisarode.com" target="_blank" rel="noopener">Docs → document.ravisarode.com</a>
+            <a href="work-experience.html">Related experience</a>
+          </div>
+
+          <div class="project-media" aria-hidden="true">
+            <div class="project-media-placeholder">Screenshot placeholder — add architecture or dashboard image</div>
+            <div class="project-media-placeholder">Diagram placeholder — detection / data flow</div>
+          </div>
+        </div>
+      </article>
+
+      <p class="page-lead" style="text-align: center; margin-top: 1rem;">
+        More repos and write-ups: <a href="https://github.com/ravisarode" target="_blank" rel="noopener" style="color: var(--accent);">github.com/ravisarode</a>
+      </p>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-quick" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="technical-skills.html">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p>© Ravi Sarode</p>
+    </div>
+  </footer>
+  <script src="nav.js?v=4"></script>
 </body>
 </html>

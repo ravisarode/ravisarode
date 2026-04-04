@@ -6,74 +6,141 @@
   <title>Education | Ravi Sarode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <a href="index.html">Ravi <span>Sarode</span></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Ravi <span>Sarode</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="technical-skills.html">Skills</a></li>
+          <li><a href="work-experience.html">Experience</a></li>
+          <li><a href="education.html" class="active">Education</a></li>
+          <li><a href="certifications.html">Certs</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="https://document.ravisarode.com" class="nav-docs" target="_blank" rel="noopener">Docs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work-experience.html">Work Experience</a></li>
-        <li><a href="education.html" class="active">Education</a></li>
-        <li><a href="technical-skills.html">Technical Skills</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
-    </nav>
-  </aside>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <div class="container">
-      <header class="page-header">
-        <h1 class="hero-name">Ravi <span>Sarode</span></h1>
-        <p class="hero-tagline">Security Researcher · Web3 & Cyber Security Enthusiast</p>
-        <div class="contact-bar">
-          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
-          <span class="sep">·</span>
-          <span>Bangalore, Karnataka</span>
-          <span class="sep">·</span>
-          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      <header class="page-header page-header-slim">
+        <h1 class="page-heading">Education</h1>
       </header>
 
-      <h2 class="page-title">Education</h2>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Blockchain PG Certification</span>
-          <span class="card-meta">JNTU Hyderabad · Aug 2022 – Present</span>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Bachelor of Technology</span>
-          <span class="card-meta">Annamacharya Institute of Technology and Science · 2016–2020</span>
-        </div>
-        <p class="card-sub">Percentage: 67%</p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Intermediate</span>
-          <span class="card-meta">Narayana Junior College · 2014–2016</span>
-        </div>
-        <p class="card-sub">Percentage: 90%</p>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">SSC</span>
-          <span class="card-meta">Narayana School · 2013–2014</span>
-        </div>
-        <p class="card-sub">Percentage: 90%</p>
-      </div>
+      <section class="education-timeline" aria-label="Education history">
+        <article class="education-item education-item--featured">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <span class="education-icon" aria-hidden="true">🎓</span>
+              <div class="education-panel-main">
+                <div class="education-title-row">
+                  <h2 class="education-program">M.Tech</h2>
+                  <span class="education-badge">Current</span>
+                </div>
+                <p class="education-school">IIIT Kottayam</p>
+                <p class="education-years">Jun 2023 – May 2026</p>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <footer>
-        <p>Ravi Sarode · Bangalore · s.ravi.sarode@gmail.com</p>
-      </footer>
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <span class="education-icon" aria-hidden="true">⛓️</span>
+              <div class="education-panel-main">
+                <h2 class="education-program">Blockchain PG Certification</h2>
+                <p class="education-school">JNTU Hyderabad</p>
+                <p class="education-years">Aug 2022 – Jan 2023</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <span class="education-icon" aria-hidden="true">🎓</span>
+              <div class="education-panel-main">
+                <h2 class="education-program">Bachelor of Technology</h2>
+                <p class="education-school">Annamacharya Institute of Technology and Science</p>
+                <p class="education-years">2016 – 2020</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <span class="education-icon" aria-hidden="true">📘</span>
+              <div class="education-panel-main">
+                <h2 class="education-program">Intermediate</h2>
+                <p class="education-school">Narayana Junior College</p>
+                <p class="education-years">2014 – 2016</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <span class="education-icon" aria-hidden="true">✦</span>
+              <div class="education-panel-main">
+                <h2 class="education-program">SSC</h2>
+                <p class="education-school">Narayana School</p>
+                <p class="education-years">2013 – 2014</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-quick" aria-label="Footer">
+        <a href="certifications.html">Certifications</a>
+        <a href="work-experience.html">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p>© Ravi Sarode</p>
+    </div>
+  </footer>
+  <script src="nav.js?v=4"></script>
 </body>
 </html>

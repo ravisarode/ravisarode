@@ -6,52 +6,107 @@
   <title>Volunteer | Ravi Sarode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <a href="index.html">Ravi <span>Sarode</span></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Ravi <span>Sarode</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="technical-skills.html">Skills</a></li>
+          <li><a href="work-experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certs</a></li>
+          <li><a href="volunteer.html" class="active">Volunteer</a></li>
+          <li><a href="https://document.ravisarode.com" class="nav-docs" target="_blank" rel="noopener">Docs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work-experience.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="technical-skills.html">Technical Skills</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="volunteer.html" class="active">Volunteer</a></li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
-    </nav>
-  </aside>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <div class="container">
-      <header class="page-header">
-        <h1 class="hero-name">Ravi <span>Sarode</span></h1>
-        <p class="hero-tagline">Security Researcher · Web3 & Cyber Security Enthusiast</p>
-        <div class="contact-bar">
-          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
-          <span class="sep">·</span>
-          <span>Bangalore, Karnataka</span>
-          <span class="sep">·</span>
-          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      <header class="page-header page-header-slim">
+        <h1 class="page-heading">Volunteer</h1>
+        <p class="page-lead">Actively involved in community-driven initiatives across cybersecurity and wellness domains, contributing to both technical and social impact.</p>
       </header>
 
-      <h2 class="page-title">Volunteer</h2>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Art of Living</span>
-        </div>
-      </div>
+      <section class="education-timeline" aria-label="Volunteer experience">
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <a class="education-icon education-logo-link" href="https://www.artofliving.org/in-en" target="_blank" rel="noopener noreferrer" aria-label="The Art of Living — website (opens in new tab)">
+                <img class="education-logo-img" src="https://www.google.com/s2/favicons?domain=artofliving.org&amp;sz=128" alt="" width="44" height="44" loading="lazy" decoding="async">
+              </a>
+              <div class="education-panel-main">
+                <h2 class="education-program">Art of Living</h2>
+                <p class="education-school"><a href="https://www.artofliving.org/in-en" target="_blank" rel="noopener noreferrer">The Art of Living</a></p>
+                <p class="education-years">Volunteer</p>
+                <p class="experience-tagline">Ashram · Navaratri events · Well-being &amp; mindfulness</p>
+                <ul class="experience-list">
+                  <li>Volunteered at the Art of Living Ashram across multiple Navaratri events, supporting coordination and logistics for large-scale gatherings.</li>
+                  <li>Contributed to community initiatives focused on mental well-being, stress management, and holistic development.</li>
+                  <li>Assisted in organizing programs promoting mindfulness and personal growth.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <footer>
-        <p>Ravi Sarode · Bangalore · s.ravi.sarode@gmail.com</p>
-      </footer>
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <a class="education-icon education-logo-link" href="https://bsidesbangalore.in/" target="_blank" rel="noopener noreferrer" aria-label="BSides Bangalore — website (opens in new tab)">
+                <img class="education-logo-img" src="https://www.google.com/s2/favicons?domain=bsidesbangalore.in&amp;sz=128" alt="" width="44" height="44" loading="lazy" decoding="async">
+              </a>
+              <div class="education-panel-main">
+                <h2 class="education-program">BSides Bangalore</h2>
+                <p class="education-school"><a href="https://bsidesbangalore.in/" target="_blank" rel="noopener noreferrer">BSides Bangalore</a></p>
+                <p class="education-years">Core team · Community conference</p>
+                <p class="experience-tagline">Cybersecurity community · Outreach · Executive simulations</p>
+                <ul class="experience-list">
+                  <li>Core team member at BSides Bangalore, contributing to a leading cybersecurity community conference.</li>
+                  <li>Led social media strategy, creating and curating content to drive community engagement and event visibility.</li>
+                  <li>Coordinated CXO/CISO war room simulations during annual conferences, supporting high-level incident response exercises.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-quick" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <p>© Ravi Sarode</p>
+    </div>
+  </footer>
+  <script src="nav.js?v=4"></script>
 </body>
 </html>

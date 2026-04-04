@@ -3,60 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ravi Sarode | Security Researcher & Web3 Enthusiast</title>
+  <title>Ravi Sarode | Security Engineer · Cloud & Detection</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <a href="index.html">Ravi <span>Sarode</span></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Ravi <span>Sarode</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="technical-skills.html">Skills</a></li>
+          <li><a href="work-experience.html">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certs</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="https://document.ravisarode.com" class="nav-docs" target="_blank" rel="noopener">Docs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="work-experience.html">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="technical-skills.html">Technical Skills</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
-    </nav>
-  </aside>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <div class="container">
       <header class="page-header home-hero">
         <div class="home-photo-wrap">
           <img src="ravi.png" alt="Ravi Sarode" class="home-photo" width="220" height="220">
         </div>
         <h1 class="hero-name">Ravi <span>Sarode</span></h1>
-        <p class="hero-tagline">Security Researcher · Web3 & Cyber Security Enthusiast</p>
-        <div class="contact-bar">
-          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
-          <span class="sep">·</span>
-          <span>Bangalore, Karnataka</span>
-          <span class="sep">·</span>
-          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
+        <p class="hero-role">Security Engineer · Cloud security · EKS · Detection engineering</p>
+        <p class="hero-quote">I build secure cloud systems and detection pipelines</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="project.html">View projects</a>
+          <a class="btn btn-secondary" href="resume.pdf" download>Download resume</a>
         </div>
       </header>
 
-      <h2 class="page-title">Summary</h2>
-      <section class="summary">
-        <p>
-          I am a Web3 and Cyber Security enthusiast with 2 years of experience in the Security Domain.
-          During my college days, I studied Ethical hacking, Networking, Linux, Web Application Penetration Testing, and more.
-          I like to read a book and do meditation in my free time.
-        </p>
+      <section class="section-what" aria-labelledby="what-heading">
+        <h2 id="what-heading" class="page-title">What I do</h2>
+        <div class="what-grid">
+          <article class="what-card">
+            <div class="what-icon" aria-hidden="true">☁️</div>
+            <h3>Cloud security</h3>
+            <p>Hardening and securing cloud workloads—AWS, Kubernetes, and EKS patterns—with a focus on practical controls and observable posture.</p>
+          </article>
+          <article class="what-card">
+            <div class="what-icon" aria-hidden="true">📡</div>
+            <h3>Detection engineering</h3>
+            <p>Designing and tuning detections for EDR/SIEM, reducing noise, and mapping coverage to MITRE ATT&amp;CK so teams respond faster.</p>
+          </article>
+          <article class="what-card">
+            <div class="what-icon" aria-hidden="true">⚙️</div>
+            <h3>Security automation</h3>
+            <p>Automating triage, reporting, and repeatable security workflows with Python, APIs, and cloud services.</p>
+          </article>
+        </div>
       </section>
 
-      <footer>
-        <p>Ravi Sarode · Bangalore · s.ravi.sarode@gmail.com</p>
-      </footer>
+      <section class="section-story" aria-labelledby="story-heading">
+        <h2 id="story-heading" class="page-title">How I work</h2>
+        <div class="story-block">
+          <p>
+            I care about <strong>signal over noise</strong>: whether that is tuning an EDR rule, validating a detection against real adversary behavior, or helping customers understand what happened in their environment.
+          </p>
+          <p>
+            With hands-on experience in enterprise detection (Microsoft Defender for Endpoint) and a background in ethical hacking, networking, and web application security, I bridge research, engineering, and communication—so security controls actually ship and stick.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-contact" id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="page-title" style="margin-bottom: 0.5rem;">Contact</h2>
+        <p class="page-lead" style="margin-bottom: 0;">Let’s talk roles, collaborations, or detection ideas.</p>
+        <div class="contact-grid">
+          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
+          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/ravisarode" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://document.ravisarode.com" target="_blank" rel="noopener">Docs → document.ravisarode.com</a>
+        </div>
+      </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-quick" aria-label="Footer">
+        <a href="project.html">Projects</a>
+        <a href="technical-skills.html">Skills</a>
+        <a href="work-experience.html">Experience</a>
+        <a href="certifications.html">Certifications</a>
+      </nav>
+      <p>© Ravi Sarode · Bangalore</p>
+    </div>
+  </footer>
+  <script src="nav.js?v=4"></script>
 </body>
 </html>

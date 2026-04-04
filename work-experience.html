@@ -3,74 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work Experience | Ravi Sarode</title>
+  <title>Experience | Ravi Sarode</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="sidebar-brand">
-      <a href="index.html">Ravi <span>Sarode</span></a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">Ravi <span>Sarode</span></a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav id="site-nav" class="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="technical-skills.html">Skills</a></li>
+          <li><a href="work-experience.html" class="active">Experience</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="certifications.html">Certs</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="https://document.ravisarode.com" class="nav-docs" target="_blank" rel="noopener">Docs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="work-experience.html" class="active">Work Experience</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="technical-skills.html">Technical Skills</a></li>
-        <li><a href="certifications.html">Certifications</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
-    </nav>
-  </aside>
+  </header>
+  <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main">
+  <main class="main" id="main-content">
     <div class="container">
-      <header class="page-header">
-        <h1 class="hero-name">Ravi <span>Sarode</span></h1>
-        <p class="hero-tagline">Security Researcher · Web3 & Cyber Security Enthusiast</p>
-        <div class="contact-bar">
-          <a href="mailto:s.ravi.sarode@gmail.com">s.ravi.sarode@gmail.com</a>
-          <span class="sep">·</span>
-          <span>Bangalore, Karnataka</span>
-          <span class="sep">·</span>
-          <a href="https://linkedin.com/in/ravi-sarode/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+      <header class="page-header page-header-slim">
+        <h1 class="page-heading">Work experience</h1>
+        <p class="page-lead">MDR, EDR operations, detection engineering, and customer-impacting security outcomes—not just task lists.</p>
       </header>
 
-      <h2 class="page-title">Work Experience</h2>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Security Researcher</span>
-          <span class="card-meta">MindTree · Apr 2021 – Present</span>
-        </div>
-        <p class="card-sub">Microsoft Defender for Endpoint</p>
-        <ul>
-          <li>Part of the Security Research team for Microsoft Defender for Endpoint</li>
-          <li>Analyzing false positives of the product and mitigating them</li>
-          <li>Analyzing machine events data to identify False Positive / True Positive</li>
-          <li>Emulating APT groups behavior/attacks to identify detections in EDR product and MITRE ATT&CK framework</li>
-          <li>Writing suppression rules for False Positive detectors</li>
-          <li>Handling customer detection issues by providing prompt and accurate feedback and creating reports based on analysis</li>
-        </ul>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <span class="card-title">Technical Trainee</span>
-          <span class="card-meta">ENH iSecure · Feb 2020 – Jul 2022</span>
-        </div>
-        <ul>
-          <li>Worked in ENH iSecure as an IAM Trainee</li>
-        </ul>
-      </div>
+      <section class="education-timeline" aria-label="Work history">
+        <article class="education-item education-item--featured">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <a class="education-icon education-logo-link" href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer" aria-label="Fortinet — company website (opens in new tab)">
+                <img class="education-logo-img" src="https://www.google.com/s2/favicons?domain=fortinet.com&amp;sz=128" alt="" width="44" height="44" loading="lazy" decoding="async">
+              </a>
+              <div class="education-panel-main">
+                <div class="education-title-row">
+                  <h2 class="education-program">Tactical Threat Analyst 2 (MDR)</h2>
+                  <span class="education-badge">Current</span>
+                </div>
+                <p class="education-school"><a href="https://www.fortinet.com/" target="_blank" rel="noopener noreferrer">Fortinet</a></p>
+                <p class="education-years">May 2023 – Present</p>
+                <p class="experience-tagline">Managed Detection and Response (MDR) · FortiEDR · Monitoring · Threat hunting · Incident response</p>
+                <ul class="experience-list">
+                  <li>Working as a Tactical Threat Analyst in the Managed Detection and Response (MDR) team, responsible for protecting premium clients from advanced cyber threats.</li>
+                  <li>Performing 24/7 security monitoring across endpoints using FortiEDR.</li>
+                  <li>Analyzing and triaging security alerts to identify true threats and reduce false positives.</li>
+                  <li>Conducting proactive threat hunting to detect sophisticated and hidden malicious activities.</li>
+                  <li>Investigating security incidents to determine scope, root cause, and impact.</li>
+                  <li>Executing rapid incident response actions, including isolating compromised endpoints and mitigating threats.</li>
+                  <li>Performing remediation and supporting forensic analysis to restore systems and prevent recurrence.</li>
+                  <li>Leveraging threat intelligence to identify emerging attack patterns, tactics, and techniques (TTPs).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
 
-      <footer>
-        <p>Ravi Sarode · Bangalore · s.ravi.sarode@gmail.com</p>
-      </footer>
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <a class="education-icon education-logo-link" href="https://www.ltm.com/" target="_blank" rel="noopener noreferrer" aria-label="LTI Mindtree — company website (opens in new tab)">
+                <img class="education-logo-img" src="https://www.google.com/s2/favicons?domain=ltm.com&amp;sz=128" alt="" width="44" height="44" loading="lazy" decoding="async">
+              </a>
+              <div class="education-panel-main">
+                <h2 class="education-program">Security Researcher</h2>
+                <p class="education-school"><a href="https://www.ltm.com/" target="_blank" rel="noopener noreferrer">LTI Mindtree</a></p>
+                <p class="education-years">Apr 2021 – April 2023</p>
+                <p class="experience-tagline">Microsoft Defender for Endpoint · Threat detection · MITRE ATT&amp;CK</p>
+                <ul class="experience-list">
+                  <li>Strengthened enterprise EDR coverage by analyzing machine-telemetry and classifying true vs false positives—reducing alert fatigue for analysts and improving trust in detections.</li>
+                  <li>Emulated APT-style behaviors against production-style scenarios to validate detections and map gaps to the MITRE ATT&amp;CK framework.</li>
+                  <li>Authored suppression and tuning logic for noisy detectors so high-fidelity signals surface during incidents.</li>
+                  <li>Partnered with customers on escalations: reproduced issues, documented findings, and delivered clear remediation guidance backed by evidence.</li>
+                  <li>Contributed to the security research lifecycle for Defender for Endpoint—from idea to validated detection in the field.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <div class="education-track" aria-hidden="true">
+            <span class="education-node"></span>
+          </div>
+          <div class="education-panel">
+            <div class="education-panel-top">
+              <a class="education-icon education-logo-link" href="https://www.enhisecure.com/" target="_blank" rel="noopener noreferrer" aria-label="ENH iSecure — company website (opens in new tab)">
+                <img class="education-logo-img" src="https://www.google.com/s2/favicons?domain=enhisecure.com&amp;sz=128" alt="" width="44" height="44" loading="lazy" decoding="async">
+              </a>
+              <div class="education-panel-main">
+                <h2 class="education-program">Technical Trainee</h2>
+                <p class="education-school"><a href="https://www.enhisecure.com/" target="_blank" rel="noopener noreferrer">ENH iSecure</a></p>
+                <p class="education-years">Feb 2020 – Oct 2020</p>
+                <p class="experience-tagline">Cybersecurity fundamentals · Networking · IAM · Scripting</p>
+                <ul class="experience-list">
+                  <li>Joined as a Technical Trainee during the final year of B.Tech, gaining hands-on experience in cybersecurity fundamentals.</li>
+                  <li>Developed understanding of networking concepts including protocols, ports, and standards (IETF).</li>
+                  <li>Worked on scripting and Identity &amp; Access Management (IAM) concepts.</li>
+                  <li>Built small projects and web-based applications as part of practical learning.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <nav class="footer-quick" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="technical-skills.html">Skills</a>
+      </nav>
+      <p>© Ravi Sarode</p>
+    </div>
+  </footer>
+  <script src="nav.js?v=4"></script>
 </body>
 </html>
