@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certifications | Ravi Sarode</title>
+  <title>Certifications &amp; courses | Ravi Sarode</title>
+  <meta name="description" content="Professional certifications with verification links and formal courses completed.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -38,46 +39,76 @@
   </header>
   <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main" id="main-content">
-    <div class="container">
-      <header class="page-header page-header-slim">
-        <h1 class="page-heading">Certifications</h1>
-        <p class="page-lead">Industry credentials with issuer verification. Replace verification links with your certificate IDs where applicable.</p>
+  <main class="main certs-page" id="main-content">
+    <div class="certs-page__ambience" aria-hidden="true"></div>
+    <div class="container certs-page__container">
+      <header class="page-header page-header-slim certs-page__header">
+        <h1 class="page-heading certs-page__title">Certifications &amp; courses</h1>
       </header>
 
-      <h2 class="page-title">Highlighted</h2>
-      <div class="certs-grid">
-        <article class="cert-card featured">
-          <div class="cert-card-logo" aria-hidden="true">CEH</div>
-          <div class="cert-card-body">
-            <span class="cert-badge-inline">Featured</span>
-            <h3>Certified Ethical Hacker (CEH)</h3>
-            <p>EC-Council · Practical ethical hacking &amp; assessment mindset.</p>
-            <a href="https://www.eccouncil.org/verify-certificate/" target="_blank" rel="noopener">Verify on EC-Council →</a>
-          </div>
-        </article>
-        <article class="cert-card featured">
-          <div class="cert-card-logo" aria-hidden="true">CCNA</div>
-          <div class="cert-card-body">
-            <span class="cert-badge-inline">Featured</span>
-            <h3>Cisco Certified Network Associate</h3>
-            <p>Cisco · Networking fundamentals for security-relevant infrastructure.</p>
-            <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/verify.html" target="_blank" rel="noopener">Verify on Cisco →</a>
-          </div>
-        </article>
-      </div>
+      <section class="cert-page-block" aria-labelledby="certs-heading">
+        <div class="cert-section-head">
+          <span class="cert-section-head__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </span>
+          <h2 id="certs-heading" class="page-title cert-section-head__title">Certifications</h2>
+        </div>
+        <div class="certs-grid certs-grid--page">
+          <article class="cert-card">
+            <div class="cert-card-logo">
+              <img class="cert-card-logo-img" src="https://www.google.com/s2/favicons?domain=fortinet.com&amp;sz=128" alt="Fortinet" width="40" height="40" loading="lazy" decoding="async">
+            </div>
+            <div class="cert-card-body">
+              <h3>FortiEDR Administrator</h3>
+              <p>Fortinet · Digital badge on Credly</p>
+              <a class="cert-card-link" href="https://www.credly.com/badges/deced96d-e651-4cb6-bee2-4964697531ed" target="_blank" rel="noopener noreferrer"><span>View badge on Credly</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </article>
+          <article class="cert-card">
+            <a class="education-icon education-logo-link" href="https://bsidesbangalore.in/" target="_blank" rel="noopener noreferrer" aria-label="BSides Bangalore — website (opens in new tab)">
+              <img class="education-logo-img" src="https://www.google.com/s2/favicons?domain=bsidesbangalore.in&amp;sz=128" alt="" width="44" height="44" loading="lazy" decoding="async">
+            </a>
+            <div class="cert-card-body">
+              <h3>ICS/OT Cybersecurity Essentials</h3>
+              <p>Certificate of completion</p>
+              <a class="cert-card-link" href="https://drive.google.com/file/d/1bZr5ug7i-nHoZbrKJGQHIm3tHqHZfMWg/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>Open certificate</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </article>
+          <article class="cert-card">
+            <div class="cert-card-logo">
+              <img class="cert-card-logo-img" src="https://www.google.com/s2/favicons?domain=tryhackme.com&amp;sz=128" alt="TryHackMe" width="40" height="40" loading="lazy" decoding="async">
+            </div>
+            <div class="cert-card-body">
+              <h3>SOC Level 1</h3>
+              <p>TryHackMe · learning path</p>
+              <a class="cert-card-link" href="https://tryhackme.com/p/ravi.sarode" target="_blank" rel="noopener noreferrer"><span>View profile on TryHackMe</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <h2 class="page-title" style="margin-top: 2rem;">Additional</h2>
-      <div class="certs-grid">
-        <article class="cert-card">
-          <div class="cert-card-logo" aria-hidden="true">WAPT</div>
-          <div class="cert-card-body">
-            <h3>Web Application Penetration Testing</h3>
-            <p>Hands-on web security testing aligned to real-world bug classes.</p>
-            <a href="index.html#contact">Request credential details</a>
-          </div>
-        </article>
-      </div>
+      <section class="cert-page-block cert-page-block--courses" aria-labelledby="courses-heading">
+        <div class="cert-section-head">
+          <span class="cert-section-head__icon cert-section-head__icon--courses" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </span>
+          <h2 id="courses-heading" class="page-title cert-section-head__title">Courses</h2>
+        </div>
+        <ul class="course-tiles" role="list">
+          <li class="course-tile">
+            <span class="course-tile__accent" aria-hidden="true"></span>
+            <span class="course-tile__text">Certified Ethical Hacker</span>
+          </li>
+          <li class="course-tile">
+            <span class="course-tile__accent" aria-hidden="true"></span>
+            <span class="course-tile__text">Cisco Certified Network Associate</span>
+          </li>
+          <li class="course-tile">
+            <span class="course-tile__accent" aria-hidden="true"></span>
+            <span class="course-tile__text">Web Application Penetration testing</span>
+          </li>
+        </ul>
+      </section>
     </div>
   </main>
 
@@ -88,9 +119,9 @@
         <a href="work-experience.html">Experience</a>
         <a href="index.html#contact">Contact</a>
       </nav>
-      <p>© Ravi Sarode</p>
+      <p>© Ravi Sarode <span class="footer-heart" aria-hidden="true">♥</span> Bangalore</p>
     </div>
   </footer>
-  <script src="nav.js?v=4"></script>
+  <script src="nav.js?v=18"></script>
 </body>
 </html>

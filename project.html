@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Ravi Sarode</title>
+  <title>AI-Driven EDR + RAG | Project | Ravi Sarode</title>
+  <meta name="description" content="AI-powered Endpoint Detection and Response with RAG automation, AWS, Sysmon, and React dashboard.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -38,81 +39,284 @@
   </header>
   <div class="nav-overlay" aria-hidden="true"></div>
 
-  <main class="main" id="main-content">
-    <div class="container">
-      <header class="page-header page-header-slim">
-        <h1 class="page-heading">Projects</h1>
-        <p class="page-lead">Deep dives into detection engineering and EDR—problem, stack, and impact.</p>
-      </header>
+  <main class="main product-doc" id="main-content">
+    <div class="product-doc__bg" aria-hidden="true"></div>
 
-      <article class="project-card-large">
-        <div class="project-body">
-          <p class="project-label">Featured</p>
-          <h2>EDR agent monitor &amp; detection engineering</h2>
-          <p class="page-lead" style="margin: 0 0 1rem;">End-to-end work on Microsoft Defender for Endpoint: telemetry, rules, and validation—not a toy demo.</p>
+    <header class="product-doc__hero" id="top">
+      <div class="product-doc__inner">
+        <h1 class="product-doc__title">AI-Driven Endpoint Detection &amp; Response</h1>
+        <p class="product-doc__subtitle">System with RAG automation</p>
+        <p class="product-doc__lede">
+          An AI-powered EDR platform that automates alert triage and incident investigation using <strong>Retrieval-Augmented Generation (RAG)</strong>.
+          It correlates endpoint telemetry and produces contextual, analyst-ready insights—cutting noise and speeding response.
+        </p>
+        <div class="product-doc__cta">
+          <a class="product-btn product-btn--primary" href="https://document.ravisarode.com" target="_blank" rel="noopener noreferrer">Documentation</a>
+        </div>
+        <nav class="product-doc__jump" aria-label="On this page">
+          <a href="#problem">Problem</a>
+          <a href="#features">Features</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#stack">Stack</a>
+          <a href="#ai">AI / RAG</a>
+          <a href="#unique">Differentiators</a>
+          <a href="#gallery">Screenshots</a>
+          <a href="#outcomes">Impact</a>
+        </nav>
+      </div>
+    </header>
 
-          <div class="project-section">
-            <h3>What it is</h3>
-            <p>Security research and detection engineering for a major commercial EDR: understanding agent behavior, refining detections, and keeping customers protected without drowning them in noise.</p>
-          </div>
+    <div class="product-doc__inner product-doc__sections">
+      <section class="product-section" id="problem" aria-labelledby="problem-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon product-section__icon--amber" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          </span>
+          <h2 id="problem-heading" class="product-section__title">Problem statement</h2>
+        </div>
+        <div class="product-problem-card">
+          <p>Traditional EDR platforms flood the SOC with alerts that still demand <strong>manual</strong> investigation. Analysts must stitch together events, interpret telemetry, and judge severity—leading to delays, inconsistent outcomes, and fatigue.</p>
+          <p class="product-problem-card__foot">This project closes the gap between <em>detection</em> and <em>explainable, accelerated response</em>.</p>
+        </div>
+      </section>
 
-          <div class="project-section">
-            <h3>Tech &amp; tools</h3>
-            <div class="project-tech">
-              <span>Microsoft Defender for Endpoint</span>
-              <span>EDR telemetry</span>
-              <span>MITRE ATT&amp;CK</span>
-              <span>Python</span>
-              <span>Threat emulation</span>
-              <span>SIEM-style analysis</span>
+      <section class="product-section" id="features" aria-labelledby="features-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          </span>
+          <h2 id="features-heading" class="product-section__title">Key features</h2>
+        </div>
+        <div class="product-feature-grid">
+          <article class="product-feature-card">
+            <span class="product-feature-card__num">01</span>
+            <h3>Real-time monitoring</h3>
+            <p>Endpoint visibility using <strong>Sysmon</strong> telemetry for rich, structured events.</p>
+          </article>
+          <article class="product-feature-card">
+            <span class="product-feature-card__num">02</span>
+            <h3>Rule-based detection</h3>
+            <p>Configurable <strong>JSON-driven</strong> rules engine for consistent, maintainable detections.</p>
+          </article>
+          <article class="product-feature-card">
+            <span class="product-feature-card__num">03</span>
+            <h3>Event correlation</h3>
+            <p>Groups related activity into <strong>meaningful alerts</strong> instead of isolated pings.</p>
+          </article>
+          <article class="product-feature-card">
+            <span class="product-feature-card__num">04</span>
+            <h3>RAG-powered analysis</h3>
+            <p><strong>Amazon Bedrock</strong> for contextual, evidence-linked reasoning per alert.</p>
+          </article>
+          <article class="product-feature-card">
+            <span class="product-feature-card__num">05</span>
+            <h3>MITRE-aligned summaries</h3>
+            <p>Automated incident narratives with <strong>severity</strong> and <strong>MITRE ATT&amp;CK</strong> mapping.</p>
+          </article>
+          <article class="product-feature-card">
+            <span class="product-feature-card__num">06</span>
+            <h3>Analyst dashboard</h3>
+            <p><strong>React</strong> UI for triage, visualization, and investigation workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="product-section" id="architecture" aria-labelledby="arch-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </span>
+          <h2 id="arch-heading" class="product-section__title">Architecture</h2>
+        </div>
+        <p class="product-section__intro">Four integrated layers—from endpoint to analyst UI.</p>
+        <ol class="product-arch-list">
+          <li class="product-arch-item">
+            <span class="product-arch-item__step" aria-hidden="true">1</span>
+            <div>
+              <h3>Endpoint agent</h3>
+              <p>Collects Sysmon telemetry and applies detection rules at the edge.</p>
+            </div>
+          </li>
+          <li class="product-arch-item">
+            <span class="product-arch-item__step" aria-hidden="true">2</span>
+            <div>
+              <h3>Cloud backend</h3>
+              <p><strong>AWS API Gateway</strong>, <strong>Lambda</strong>, <strong>DynamoDB</strong>, and <strong>S3</strong> for scalable ingestion and APIs.</p>
+            </div>
+          </li>
+          <li class="product-arch-item">
+            <span class="product-arch-item__step" aria-hidden="true">3</span>
+            <div>
+              <h3>AI layer</h3>
+              <p><strong>Amazon Bedrock</strong> powers RAG workflows for contextual security analysis.</p>
+            </div>
+          </li>
+          <li class="product-arch-item">
+            <span class="product-arch-item__step" aria-hidden="true">4</span>
+            <div>
+              <h3>Dashboard</h3>
+              <p>React application for alert review, drill-down, and operator workflows.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="product-section" id="stack" aria-labelledby="stack-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </span>
+          <h2 id="stack-heading" class="product-section__title">Tech stack</h2>
+        </div>
+        <div class="product-stack-grid">
+          <div class="product-stack-group">
+            <h3 class="product-stack-group__label">Frontend</h3>
+            <div class="product-badges">
+              <span class="product-badge">React</span>
             </div>
           </div>
-
-          <div class="project-section">
-            <h3>Problem solved</h3>
-            <ul>
-              <li>Noisy or incorrect detections erode trust and slow response—needed rigorous FP/TP analysis and targeted tuning.</li>
-              <li>Customers needed clear, evidence-backed answers when something fired in their environment.</li>
-              <li>Coverage had to be stress-tested against realistic adversary tradecraft, not only happy-path tests.</li>
-            </ul>
+          <div class="product-stack-group">
+            <h3 class="product-stack-group__label">Backend</h3>
+            <div class="product-badges">
+              <span class="product-badge">AWS Lambda</span>
+              <span class="product-badge">API Gateway</span>
+            </div>
           </div>
-
-          <div class="project-section">
-            <h3>Impact</h3>
-            <ul>
-              <li>Improved detection quality through structured analysis of machine events and customer escalations.</li>
-              <li>Reduced analyst toil by tightening suppressions and clarifying which alerts matter.</li>
-              <li>Aligned detection narratives to ATT&amp;CK so security teams can prioritize and communicate risk.</li>
-            </ul>
+          <div class="product-stack-group">
+            <h3 class="product-stack-group__label">Cloud &amp; data</h3>
+            <div class="product-badges">
+              <span class="product-badge">DynamoDB</span>
+              <span class="product-badge">Amazon S3</span>
+            </div>
           </div>
-
-          <div class="project-links">
-            <a href="https://github.com/ravisarode" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://document.ravisarode.com" target="_blank" rel="noopener">Docs → document.ravisarode.com</a>
-            <a href="work-experience.html">Related experience</a>
+          <div class="product-stack-group">
+            <h3 class="product-stack-group__label">AI</h3>
+            <div class="product-badges">
+              <span class="product-badge product-badge--ai">Amazon Bedrock</span>
+              <span class="product-badge product-badge--ai">RAG</span>
+            </div>
           </div>
-
-          <div class="project-media" aria-hidden="true">
-            <div class="project-media-placeholder">Screenshot placeholder — add architecture or dashboard image</div>
-            <div class="project-media-placeholder">Diagram placeholder — detection / data flow</div>
+          <div class="product-stack-group">
+            <h3 class="product-stack-group__label">Agent &amp; telemetry</h3>
+            <div class="product-badges">
+              <span class="product-badge">.NET</span>
+              <span class="product-badge">Windows</span>
+              <span class="product-badge">Sysmon</span>
+            </div>
           </div>
         </div>
-      </article>
+      </section>
 
-      <p class="page-lead" style="text-align: center; margin-top: 1rem;">
-        More repos and write-ups: <a href="https://github.com/ravisarode" target="_blank" rel="noopener" style="color: var(--accent);">github.com/ravisarode</a>
-      </p>
+      <section class="product-section product-section--ai" id="ai" aria-labelledby="ai-heading">
+        <div class="product-ai-panel">
+          <div class="product-section__head product-section__head--compact">
+            <span class="product-section__icon product-section__icon--ai" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M16 14v2a4 4 0 0 1-8 0v-2"/><path d="M8 10h8"/><path d="M12 18v4"/></svg>
+            </span>
+            <h2 id="ai-heading" class="product-section__title product-section__title--ai">AI innovation</h2>
+          </div>
+          <p class="product-ai-panel__text">
+            <strong>Retrieval-Augmented Generation (RAG)</strong> grounds each analysis in your own telemetry and context—producing summaries, classification, and reasoning that analysts can trust. Less manual correlation, more consistent narratives across the team.
+          </p>
+        </div>
+      </section>
+
+      <section class="product-section" id="unique" aria-labelledby="unique-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4-6.5 4 2-7L2 9h7z"/></svg>
+          </span>
+          <h2 id="unique-heading" class="product-section__title">What makes it unique</h2>
+        </div>
+        <ul class="product-unique-grid">
+          <li class="product-unique-item"><span class="product-unique-item__check" aria-hidden="true">✓</span> Bridges <strong>detection</strong> and <strong>investigation</strong> in one flow</li>
+          <li class="product-unique-item"><span class="product-unique-item__check" aria-hidden="true">✓</span> Automates triage with <strong>AI</strong>, not just more dashboards</li>
+          <li class="product-unique-item"><span class="product-unique-item__check" aria-hidden="true">✓</span> <strong>Explainable</strong>, evidence-oriented security insights</li>
+          <li class="product-unique-item"><span class="product-unique-item__check" aria-hidden="true">✓</span> Unifies <strong>behavioral detection</strong>, correlation, and reasoning</li>
+        </ul>
+      </section>
+
+      <section class="product-section" id="gallery" aria-labelledby="gallery-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          </span>
+          <h2 id="gallery-heading" class="product-section__title">Screenshots</h2>
+        </div>
+        <div class="product-gallery">
+          <figure class="product-gallery__item">
+            <div class="product-gallery__thumb">
+              <img src="images/login%20panel.png" alt="Login page" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Login page</figcaption>
+          </figure>
+          <figure class="product-gallery__item">
+            <div class="product-gallery__thumb">
+              <img src="images/EDR_Dashboard.png?v=2" alt="EDR React dashboard with alerts" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption>React dashboard</figcaption>
+          </figure>
+          <figure class="product-gallery__item">
+            <div class="product-gallery__thumb">
+              <img src="images/Event_details.png" alt="Security event details and log context" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Event &amp; log views</figcaption>
+          </figure>
+          <figure class="product-gallery__item">
+            <div class="product-gallery__thumb">
+              <img src="images/corellation.png" alt="Correlated events and activity grouping" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Event correlation</figcaption>
+          </figure>
+          <figure class="product-gallery__item">
+            <div class="product-gallery__thumb">
+              <img src="images/AI_Analysis.png" alt="AI-generated security analysis summary" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption>AI / RAG analysis</figcaption>
+          </figure>
+          <figure class="product-gallery__item">
+            <div class="product-gallery__thumb">
+              <img src="images/AI_followup_query.png" alt="Follow-up query to AI analysis" width="1200" height="675" loading="lazy" decoding="async">
+            </div>
+            <figcaption>AI follow-up</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="product-section product-section--last" id="outcomes" aria-labelledby="outcomes-heading">
+        <div class="product-section__head">
+          <span class="product-section__icon product-section__icon--green" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </span>
+          <h2 id="outcomes-heading" class="product-section__title">Outcome &amp; impact</h2>
+        </div>
+        <div class="product-outcome-row">
+          <article class="product-outcome-card">
+            <h3>Less manual triage</h3>
+            <p>Automated narratives and classification reduce repetitive analyst grind.</p>
+          </article>
+          <article class="product-outcome-card">
+            <h3>Consistent analysis</h3>
+            <p>Shared reasoning framework across alerts and shifts.</p>
+          </article>
+          <article class="product-outcome-card">
+            <h3>Faster response</h3>
+            <p>AI-driven context accelerates decisions from signal to action.</p>
+          </article>
+        </div>
+      </section>
     </div>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" id="site-footer">
     <div class="site-footer-inner">
       <nav class="footer-quick" aria-label="Footer">
         <a href="index.html">Home</a>
-        <a href="technical-skills.html">Skills</a>
+        <a href="project.html">Projects</a>
+        <a href="https://document.ravisarode.com" target="_blank" rel="noopener noreferrer">Documentation</a>
         <a href="index.html#contact">Contact</a>
       </nav>
-      <p>© Ravi Sarode</p>
+      <p>© Ravi Sarode <span class="footer-heart" aria-hidden="true">♥</span> Bangalore</p>
     </div>
   </footer>
   <script src="nav.js?v=4"></script>
