@@ -394,6 +394,284 @@ body {
   text-decoration: underline;
 }
 
+/* ——— Dedicated contact page ——— */
+.contact-page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.contact-page__bg {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 440px;
+  background:
+    radial-gradient(ellipse 72% 58% at 50% -18%, rgba(56, 189, 248, 0.22), transparent 58%),
+    radial-gradient(ellipse 48% 42% at 96% 22%, rgba(167, 139, 250, 0.12), transparent 52%),
+    radial-gradient(ellipse 42% 38% at 4% 28%, rgba(56, 189, 248, 0.1), transparent 48%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-page__inner {
+  position: relative;
+  z-index: 1;
+  padding-top: 2.25rem;
+}
+
+.contact-intro {
+  text-align: center;
+  max-width: 38rem;
+  margin: 0 auto 1rem;
+  animation: contactIntroIn 0.65s ease-out both;
+}
+
+@keyframes contactIntroIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  margin-bottom: 0.65rem;
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.85rem, 4.2vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 0;
+  color: var(--text);
+}
+
+.contact-title span {
+  background: linear-gradient(115deg, #7dd3fc 0%, #38bdf8 35%, #a78bfa 70%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-resume {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  max-width: 38rem;
+  animation: contactIntroIn 0.55s ease-out 0.08s both;
+}
+
+.contact-panel {
+  padding: 1.5rem 1.35rem 1.35rem;
+  border-radius: 16px;
+  border: 1px solid rgba(51, 65, 85, 0.9);
+  background:
+    linear-gradient(165deg, rgba(30, 41, 59, 0.72) 0%, rgba(15, 23, 42, 0.5) 100%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.04) inset,
+    0 24px 48px rgba(0, 0, 0, 0.22);
+}
+
+.contact-panel-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  padding-left: 0.15rem;
+  font-family: inherit;
+  line-height: 1.4;
+}
+
+.contact-channels {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  gap: 0.85rem;
+}
+
+.contact-channels li {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-channel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 100%;
+  padding: 1.1rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.45);
+  text-decoration: none;
+  color: inherit;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
+  animation: contactChannelIn 0.5s ease-out both;
+}
+
+.contact-channels li:nth-child(1) .contact-channel { animation-delay: 0.06s; }
+.contact-channels li:nth-child(2) .contact-channel { animation-delay: 0.1s; }
+.contact-channels li:nth-child(3) .contact-channel { animation-delay: 0.14s; }
+.contact-channels li:nth-child(4) .contact-channel { animation-delay: 0.18s; }
+.contact-channels li:nth-child(5) .contact-channel { animation-delay: 0.22s; }
+
+@keyframes contactChannelIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-channel:hover {
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(15, 23, 42, 0.75);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.12),
+    0 14px 36px rgba(0, 0, 0, 0.28);
+  transform: translateY(-2px);
+}
+
+.contact-channel:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.contact-channel-icon {
+  flex-shrink: 0;
+  width: 2.85rem;
+  height: 2.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  font-size: 1.2rem;
+  line-height: 1;
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.contact-channel-icon--mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contact-channel--linkedin .contact-channel-icon {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.04em;
+  color: #93c5fd;
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(37, 99, 235, 0.18);
+}
+
+.contact-channel--github .contact-channel-icon {
+  border-color: rgba(148, 163, 184, 0.35);
+  background: rgba(100, 116, 139, 0.15);
+}
+
+.contact-channel--instagram .contact-channel-icon {
+  border-color: rgba(244, 114, 182, 0.35);
+  background: rgba(219, 39, 119, 0.12);
+}
+
+.contact-channel--docs .contact-channel-icon {
+  border-color: rgba(52, 211, 153, 0.3);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.contact-channel-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.contact-channel-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.contact-channel-line {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  word-break: break-word;
+}
+
+.contact-channel-arrow {
+  flex-shrink: 0;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-channel:hover .contact-channel-arrow {
+  color: var(--accent);
+  transform: translate(3px, -2px);
+}
+
+@media (max-width: 520px) {
+  .contact-page__inner {
+    padding-top: 1.75rem;
+  }
+
+  .contact-panel {
+    padding: 1.15rem 1rem 1rem;
+    border-radius: 14px;
+  }
+
+  .contact-channels {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-channel {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-intro,
+  .contact-resume,
+  .contact-channel {
+    animation: none;
+  }
+
+  .contact-channel:hover {
+    transform: none;
+  }
+
+  .contact-channel:hover .contact-channel-arrow {
+    transform: none;
+  }
+}
+
 /* Page title (eyebrow) */
 .page-title {
   font-size: 0.7rem;
